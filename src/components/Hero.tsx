@@ -5,7 +5,7 @@ export default function Hero() {
     <div className={classes["hero-section"]}>
       <h1>
         Nice to meet you! {"\n"}
-        I'm <span>Adam Keyes</span>.
+        I'm<span>Adam Keyes.<hr/></span>
       </h1>
 
       <p>
