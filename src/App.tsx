@@ -1,10 +1,15 @@
-import Navbar from './components/Navbar'
-import classes from './App.module.css'
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+
+import classes from "./App.module.css";
 
 export default function App() {
   return (
-    <main className={classes.container}>
+    <div>
       <Navbar />
-    </main>
-  )
+      <main className={classes.container}>
+        <Hero />
+      </main>
+    </div>
+  );
 }

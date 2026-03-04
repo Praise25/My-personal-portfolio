@@ -2,7 +2,7 @@ import classes from "./Navbar.module.css";
 
 import githubIcon from "../assets/github.svg";
 import frontendMentorIcon from "../assets/frontend-mentor.svg";
-import linkedinIcon from "../assets/linkedin.svg";
+import linkedinIcon from "../assets/linkedIn.svg";
 import twitterIcon from "../assets/twitter.svg";
 
 export default function Navbar() {

@@ -1,0 +1,46 @@
+.hero-section {
+  /* border: 1px solid black; */
+  margin-top: 5.25rem;
+}
+
+.hero-section h1{
+  font-family: var(--space-grotesk);
+  font-size: 88px;
+  letter-spacing: -2.5px;
+  line-height: 88px;
+  white-space: pre-line;
+}
+
+.hero-section span{
+  text-decoration: underline;
+  text-decoration-color: #4EE1A0;
+  text-decoration-thickness: 0.35rem;
+  text-underline-offset: 1rem;
+  /* border-bottom: 0.35rem solid #4EE1A0;
+  padding-bottom: -5rem; */
+}
+
+.hero-section p{
+  font-family: var(--space-grotesk);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  white-space: pre-line;
+  color: #D9D9D9;
+  margin-top: 2.8rem;
+}
+
+.hero-section button {
+  font-family: var(--space-grotesk);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  border: 0;
+  color: #ffffff;
+  background-color: #151515;
+  border-bottom: 2.4px solid #4EE1A0;
+  padding: 0.6rem 0;
+  padding-right: 0.1rem;
+  margin-top: 3.5rem;
+}
