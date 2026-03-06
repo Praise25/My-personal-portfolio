@@ -1,0 +1,14 @@
+.button {
+  font-family: var(--space-grotesk);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  border: 0;
+  color: #ffffff;
+  background-color: #151515;
+  border-bottom: 2.4px solid #4ee1a0;
+  padding: 0.6rem 0;
+  padding-right: 0.1rem;
+  /* margin-top: 3.5rem; */
+}
