@@ -1,19 +1,31 @@
+import heroImg from "../assets/hero-picture.png";
+
 import classes from "./Hero.module.css";
 
 export default function Hero() {
   return (
     <div className={classes["hero-section"]}>
-      <h1>
-        Nice to meet you! {"\n"}
-        I'm<span>Adam Keyes.<hr/></span>
-      </h1>
+      <div>
+        <h1>
+          Nice to meet you! {"\n"}
+          I'm
+          <span>
+            Adam Keyes.
+            <hr />
+          </span>
+        </h1>
 
-      <p>
-        Based in the UK, I’m a front-end developer {"\n"}
-        passionate about building accessible web apps {"\n"}
-        that users love.
-      </p>
-      <button>CONTACT ME</button>
+        <p>
+          Based in the UK, I’m a front-end developer {"\n"}
+          passionate about building accessible web apps {"\n"}
+          that users love.
+        </p>
+        <button>CONTACT ME</button>
+      </div>
+
+      <div className={classes["image-container"]}>
+        <img src={heroImg} alt="Adam Keyes" />
+      </div>
     </div>
   );
 }
