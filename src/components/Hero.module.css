@@ -52,6 +52,18 @@
 .image-container {
   position: absolute;
   z-index: -1;
-  top: -12.3rem;
-  right: 6.1rem;
+  top: -12.3em;
+  right: 6.1em;
+}
+
+.white-circle {
+  position: absolute;
+  left: -4rem;
+  bottom: 4.6rem;
+}
+
+.ovals-design{
+  position: absolute;
+  top: 8.295em;
+  left: -0.5px;
 }
