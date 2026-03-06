@@ -47,7 +47,7 @@
   bottom: 4.6rem;
 }
 
-.ovals-design{
+.ovals-design {
   position: absolute;
   top: 8.295em;
   left: -0.5px;
@@ -55,4 +55,5 @@
 
 .button {
   margin-top: 3.5rem;
+  padding-right: 0.1rem;
 }
