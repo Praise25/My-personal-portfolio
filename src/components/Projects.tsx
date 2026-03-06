@@ -10,37 +10,37 @@ import classes from "./Projects.module.css";
 
 const PROJECTS = [
   {
-    projectLink: "",
+    projectLink: "#",
     projectImg: designPortfolio,
     projectTitle: "Design Portfolio",
     projectTags: ["HTML", "CSS"],
   },
   {
-    projectLink: "",
+    projectLink: "#",
     projectImg: landingPage,
     projectTitle: "E-Learning Landing Page",
     projectTags: ["HTML", "CSS"],
   },
   {
-    projectLink: "",
+    projectLink: "#",
     projectImg: todoApp,
     projectTitle: "Todo Web App",
     projectTags: ["HTML", "CSS", "Javascript"],
   },
   {
-    projectLink: "",
+    projectLink: "#",
     projectImg: entertainmentApp,
     projectTitle: "Entertainment Web App",
     projectTags: ["HTML", "CSS", "Javascript"],
   },
   {
-    projectLink: "",
+    projectLink: "#",
     projectImg: memoryGame,
     projectTitle: "Memory Game",
     projectTags: ["HTML", "CSS", "Javascript"],
   },
   {
-    projectLink: "",
+    projectLink: "#",
     projectImg: artShowcase,
     projectTitle: "Art Gallery Showcase",
     projectTags: ["HTML", "CSS", "Javascript"],

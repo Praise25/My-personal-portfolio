@@ -1,0 +1,44 @@
+.root-container {
+  background-color: #242424;
+  width: 93.8%;
+  margin-top: 8.6rem;
+  padding: 3.1rem 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10.25rem;
+}
+
+.main-content article {
+  width: 40%;
+}
+
+.main-content article h1 {
+  font-family: var(--space-grotesk);
+  font-size: 5.5rem;
+  letter-spacing: -2.5px;
+  line-height: calc(88rem / 16);
+}
+
+.main-content article p {
+  font-family: var(--space-grotesk);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 28px;
+  white-space: pre-line;
+  color: #d9d9d9;
+  margin-top: 2.45rem;
+}
+
+.main-content form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.navbar-container {
+  border-top: 2px solid #ffffff;
+}
