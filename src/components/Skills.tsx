@@ -1,3 +1,5 @@
+import ovalsDesign2 from "../assets/ovals-2.svg"
+
 import classes from "./Skills.module.css";
 
 const SKILLS = [
@@ -20,6 +22,7 @@ export default function Skills() {
           </li>
         ))}
       </ul>
+      <img src={ovalsDesign2} alt="Oval Design 2" />
     </div>
   );
 }
