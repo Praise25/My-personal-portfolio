@@ -1,11 +1,11 @@
 import type React from "react";
-import classes from "./ContactButton.module.css";
+import classes from "./Button.module.css";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "outline";
 }
 
-export default function ContactButton({
+export default function Button({
   variant = "primary",
   className,
   children,

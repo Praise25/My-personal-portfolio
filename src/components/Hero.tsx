@@ -1,7 +1,7 @@
 import heroImg from "../assets/hero-picture.png";
 import whiteCircle from "../assets/white-circle.svg";
 import ovalsDesign from "../assets/ovals.svg";
-import ContactButton from "./UI/ContactButton";
+import Button from "./UI/Button";
 
 import classes from "./Hero.module.css";
 
@@ -24,7 +24,7 @@ export default function Hero() {
             passionate about building accessible web apps {"\n"}
             that users love.
           </p>
-          <ContactButton className={classes.button}>CONTACT ME</ContactButton>
+          <Button className={classes.button}>CONTACT ME</Button>
         </div>
 
         <div className={classes["image-container"]}>

@@ -1,4 +1,4 @@
-import ContactButton from "./UI/ContactButton";
+import Button from "./UI/Button";
 import designPortfolio from "../assets/designer-portfolio.jpg";
 import landingPage from "../assets/landing-page.png";
 import todoApp from "../assets/todo-app.png";
@@ -52,7 +52,7 @@ export default function Projects() {
     <div className={classes["root-container"]}>
       <div className={classes["project-header"]}>
         <h1>Projects</h1>
-        <ContactButton className={classes.button}>CONTACT ME</ContactButton>
+        <Button className={classes.button}>CONTACT ME</Button>
       </div>
       <ul className={classes["list-container"]}>
         {PROJECTS.map((project, index) => (
