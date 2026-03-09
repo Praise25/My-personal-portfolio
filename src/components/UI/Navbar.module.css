@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2.25rem 10.25rem;
 }
 
 .nav-content h1 {
@@ -16,8 +15,6 @@
 .nav-content ul {
   display: flex;
   flex-direction: row;
-  align-items: end;
   gap: 2rem;
   list-style: none;
-  margin-right: 7.9rem;
 }

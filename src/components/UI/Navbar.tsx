@@ -1,14 +1,18 @@
 import classes from "./Navbar.module.css";
 
-import githubIcon from "../assets/github.svg";
-import frontendMentorIcon from "../assets/frontend-mentor.svg";
-import linkedinIcon from "../assets/linkedIn.svg";
-import twitterIcon from "../assets/twitter.svg";
+import githubIcon from "../../assets/github.svg";
+import frontendMentorIcon from "../../assets/frontend-mentor.svg";
+import linkedinIcon from "../../assets/linkedIn.svg";
+import twitterIcon from "../../assets/twitter.svg";
 
-export default function Navbar() {
+interface NavbarProps extends React.HTMLAttributes<HTMLElement> {
+  brandName: string
+}
+
+export default function Navbar({brandName, className, ...props }: NavbarProps) {
   return (
-    <nav className={classes["nav-content"]}>
-      <h1>adamkeyes</h1>
+    <nav className={`${classes["nav-content"]} ${className}`} {...props}>
+      <h1>{brandName}</h1>
       <ul>
         <li>
           <a

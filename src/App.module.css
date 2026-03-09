@@ -2,3 +2,17 @@
   min-height: 100vh;
   margin: 0 10.25rem;
 }
+
+.navbar {
+  padding: 2.25rem 10.25rem;
+}
+
+.navbar ul {
+  align-items: center;
+  height: 2rem;
+  margin-right: 7.9rem;
+}
+
+.navbar ul li a {
+  display: flex;
+}
