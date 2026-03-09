@@ -16,7 +16,7 @@ export default function Button({
   return (
     <motion.button
       className={`${classes.button} btn--${variant} ${className ?? ""}`}
-      whileHover={{ color: "var(--green)" }}
+      whileHover={{ color: "var(--black)" }}
       {...props}
     >
       {children}
