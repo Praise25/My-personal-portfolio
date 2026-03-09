@@ -1,4 +1,5 @@
 .root-container {
+  position: relative;
   background-color: #242424;
   width: 93.7%;
   margin-top: 8.6rem;
@@ -14,9 +15,8 @@
 }
 
 .main-content article {
-  /* display: flex; */
-  flex-direction: column;
   width: 40%;
+  padding-bottom: 165px;
 }
 
 .main-content article h1 {
@@ -48,7 +48,8 @@
 }
 
 .oval-design {
-  margin-top: 2rem;
+  position: absolute;
+  bottom: 13.65rem;
 }
 
 .navbar-container {
