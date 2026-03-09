@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import Navbar from "./UI/Navbar";
 import ovalsdesign5 from "../assets/ovals-5.svg"
 
 import classes from "./ContactMe.module.css";
@@ -27,9 +27,9 @@ export default function ContactMe() {
           ></textarea>
         </form>
       </div>
-      <img src={ovalsdesign5} alt="Oval Design 5" />
+      <img className={classes["oval-design"]} src={ovalsdesign5} alt="Oval Design 5" />
       <div className={classes["navbar-container"]}>
-        <Navbar />
+        <Navbar className={classes.navbar} brandName="adamkeyes" />
       </div>
     </footer>
   );
