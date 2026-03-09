@@ -2,7 +2,11 @@
   background-color: #242424;
   width: 93.8%;
   margin-top: 8.6rem;
-  padding: 3.1rem 0;
+  padding: 5.2rem 0 3.1rem;
+}
+
+.root-container img {
+  margin-top: 2rem;
 }
 
 .main-content {
@@ -41,4 +45,5 @@
 
 .navbar-container {
   border-top: 2px solid #ffffff;
+  margin-top: 2.7rem;
 }
