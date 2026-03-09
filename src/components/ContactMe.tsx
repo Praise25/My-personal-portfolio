@@ -1,5 +1,6 @@
 import Navbar from "./UI/Navbar";
 import ovalsdesign5 from "../assets/ovals-5.svg"
+import Button from "./UI/Button";
 
 import classes from "./ContactMe.module.css";
 
@@ -25,6 +26,7 @@ export default function ContactMe() {
             id="message"
             placeholder="MESSAGE"
           ></textarea>
+          <Button className={classes.button}>SEND MESSAGE</Button>
         </form>
       </div>
       <img className={classes["oval-design"]} src={ovalsdesign5} alt="Oval Design 5" />

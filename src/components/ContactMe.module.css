@@ -3,7 +3,7 @@
   background-color: #242424;
   width: 93.7%;
   margin-top: 8.6rem;
-  padding: 5.55rem 0 3.1rem;
+  padding: 2.5rem 0 3.1rem;
 }
 
 .main-content {
@@ -11,12 +11,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 10.25rem;
+  padding: 2rem 10.25rem;
 }
 
 .main-content article {
   width: 40%;
-  padding-bottom: 165px;
+  padding-top: 1.2rem;
 }
 
 .main-content article h1 {
@@ -45,6 +45,29 @@
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin-bottom: 1.2rem;
+}
+
+.main-content form input, .main-content form textarea {
+  font-family: var(--space-grotesk);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--dark-grey);
+  border: none;
+  border-bottom: 1.5px solid var(--white);
+  margin-bottom: 1.3rem;
+  padding: 1rem 1.5rem;
+}
+
+.main-content form input::placeholder, .main-content form textarea::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.main-content form textarea {
+  resize: none;
+  height: 120px;
 }
 
 .oval-design {
@@ -53,7 +76,7 @@
 }
 
 .navbar-container {
-  border-top: 2px solid #ffffff;
+  border-top: 2px solid var(--white);
   margin: 2.7rem 10.25rem 0;
 }
 
@@ -67,4 +90,16 @@
 
 .navbar ul li a {
   display: flex;
+}
+
+.button {
+  font-family: var(--space-grotesk);
+  font-size: 16;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  align-self: flex-end;
+  background-color: var(--dark-grey);
+  width: 33%;
+  /* margin-bottom: 1.2rem; */
 }
