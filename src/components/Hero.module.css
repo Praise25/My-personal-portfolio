@@ -19,7 +19,7 @@
 
 .hero-section hr {
   border: none;
-  border-top: 0.35rem solid #4ee1a0;
+  border-top: 0.35rem solid var(--green);
   width: calc(492rem / 16);
   margin: 0 8.6rem;
 }
@@ -30,7 +30,7 @@
   font-weight: 500;
   line-height: 28px;
   white-space: pre-line;
-  color: #d9d9d9;
+  color: var(--light-grey);
   margin-top: 2.45rem;
 }
 
