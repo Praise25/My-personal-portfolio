@@ -48,7 +48,8 @@
   margin-bottom: 1.2rem;
 }
 
-.main-content form input, .main-content form textarea {
+.main-content form input,
+.main-content form textarea {
   font-family: var(--space-grotesk);
   font-weight: 500;
   font-size: 1rem;
@@ -56,11 +57,22 @@
   background-color: var(--dark-grey);
   border: none;
   border-bottom: 1.5px solid var(--white);
-  margin-bottom: 1.3rem;
   padding: 1rem 1.5rem;
 }
 
-.main-content form input::placeholder, .main-content form textarea::placeholder {
+.main-content form input.error,
+.main-content form textarea.error {
+  border-bottom: 1.5px solid var(--red);
+}
+
+.main-content form input:focus,
+.main-content form textarea:focus {
+  outline: none;
+  border-bottom: 1.5px solid var(--green);
+}
+
+.main-content form input::placeholder,
+.main-content form textarea::placeholder {
   color: var(--white);
   opacity: 0.5;
 }
@@ -101,5 +113,17 @@
   align-self: flex-end;
   background-color: var(--dark-grey);
   width: 33%;
-  /* margin-bottom: 1.2rem; */
+  margin-top: 0.2rem;
+}
+
+.error-msg {
+  font-family: var(--space-grotesk);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  height: 16px;
+  letter-spacing: -0.17px;
+  color: var(--red);
+  text-align: right;
+  margin-top: 0.3rem;
 }
