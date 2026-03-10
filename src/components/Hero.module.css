@@ -14,14 +14,20 @@
 }
 
 .hero-section span {
+  position: relative;
+  margin-top: 5rem;
   margin-left: 1.3rem;
 }
 
-.hero-section hr {
-  border: none;
-  border-top: 0.35rem solid var(--green);
-  width: calc(492rem / 16);
-  margin: 0 8.6rem;
+.hero-section span::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 5.8px;
+  width: 100%;
+  height: 0.35rem;
+  background-color: var(--green);
 }
 
 .hero-section p {
@@ -38,7 +44,7 @@
   position: absolute;
   z-index: -1;
   top: -12.3em;
-  right: 6.1em;
+  right: 0;
 }
 
 .white-circle {

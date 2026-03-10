@@ -13,10 +13,7 @@ export default function Hero() {
           <h1>
             Nice to meet you! {"\n"}
             I'm
-            <span>
-              Adam Keyes.
-              <hr />
-            </span>
+            <span>Adam Keyes</span>.
           </h1>
 
           <p>
@@ -28,7 +25,11 @@ export default function Hero() {
         </div>
 
         <div className={classes["image-container"]}>
-          <img src={heroImg} alt="Adam Keyes" />
+          <img
+            className={classes["display-picture"]}
+            src={heroImg}
+            alt="Adam Keyes"
+          />
           <img
             className={classes["white-circle"]}
             src={whiteCircle}
