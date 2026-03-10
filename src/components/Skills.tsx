@@ -1,5 +1,4 @@
-// import ovalsDesign2 from "../assets/ovals-2.svg"
-import ovalsDesign4 from "../assets/ovals-4.svg"
+import ovalsDesign6 from "../assets/ovals-6.svg"
 
 import classes from "./Skills.module.css";
 
@@ -23,7 +22,7 @@ export default function Skills() {
           </li>
         ))}
       </ul>
-      <img src={ovalsDesign4} alt="Oval Design 2" />
+      <img src={ovalsDesign6} alt="Oval Design 2" />
     </div>
   );
 }

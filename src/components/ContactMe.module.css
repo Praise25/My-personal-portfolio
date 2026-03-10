@@ -1,7 +1,9 @@
 .root-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-color: #242424;
-  width: 93.7%;
+  width: 100%;
   margin-top: 8.6rem;
   padding: 2.5rem 0 3.1rem;
 }
@@ -89,7 +91,9 @@
 
 .navbar-container {
   border-top: 2px solid var(--white);
-  margin: 2.7rem 10.25rem 0;
+  margin-top: 2.7em;
+  align-self: center;
+  width: 79%;
 }
 
 .navbar {
