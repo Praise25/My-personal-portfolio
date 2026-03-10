@@ -6,6 +6,8 @@ import entertainmentApp from "../assets/entertainment-app.png";
 import memoryGame from "../assets/memory-game.png";
 import artShowcase from "../assets/art-showcase.png";
 
+import { motion } from "motion/react";
+
 import classes from "./Projects.module.css";
 
 const PROJECTS = [
@@ -47,6 +49,21 @@ const PROJECTS = [
   },
 ];
 
+const container = {
+  visible: {},
+  hidden: {},
+};
+
+const image = {
+  visible: { scale: 1.02 },
+  hidden: { scale: 1 },
+};
+
+const overlay = {
+  visible: { opacity: 1, scale: 1.02 },
+  hidden: { opacity: 0, scale: 1 },
+};
+
 export default function Projects() {
   return (
     <div className={classes["root-container"]}>
@@ -57,19 +74,25 @@ export default function Projects() {
       <ul className={classes["list-container"]}>
         {PROJECTS.map((project, index) => (
           <li key={index}>
-            <a href={project.projectLink}>
-              <div className={classes["image-container"]}>
-                <div className={classes.overlay}>
-                  <Button className={classes["overlay-button"]}>
-                    VIEW PROJECT
-                  </Button>
-                  <Button className={classes["overlay-button"]}>
-                    VIEW CODE
-                  </Button>
-                </div>
-                <img src={project.projectImg} alt={project.projectTitle} />
-              </div>
-            </a>
+            <motion.a
+              className={classes["image-container"]}
+              href={project.projectLink}
+              variants={container}
+              initial="hidden"
+              whileHover="visible"
+            >
+              <motion.div className={classes.overlay} variants={overlay}>
+                <Button className={classes["overlay-button"]}>
+                  VIEW PROJECT
+                </Button>
+                <Button className={classes["overlay-button"]}>VIEW CODE</Button>
+              </motion.div>
+              <motion.img
+                variants={image}
+                src={project.projectImg}
+                alt={project.projectTitle}
+              />
+            </motion.a>
             <h2>{project.projectTitle.toUpperCase()}</h2>
             <ul className={classes["tags-container"]}>
               {project.projectTags.map((tag, index) => (
