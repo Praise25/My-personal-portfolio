@@ -58,16 +58,26 @@ export default function Projects() {
         {PROJECTS.map((project, index) => (
           <li key={index}>
             <a href={project.projectLink}>
-              <img src={project.projectImg} alt={project.projectTitle} />
-              <h2>{project.projectTitle.toUpperCase()}</h2>
-              <ul className={classes["tags-container"]}>
-                {project.projectTags.map((tag, index) => (
-                  <li key={index}>
-                    <p>{tag.toUpperCase()}</p>
-                  </li>
-                ))}
-              </ul>
+              <div className={classes["image-container"]}>
+                <div className={classes.overlay}>
+                  <Button className={classes["overlay-button"]}>
+                    VIEW PROJECT
+                  </Button>
+                  <Button className={classes["overlay-button"]}>
+                    VIEW CODE
+                  </Button>
+                </div>
+                <img src={project.projectImg} alt={project.projectTitle} />
+              </div>
             </a>
+            <h2>{project.projectTitle.toUpperCase()}</h2>
+            <ul className={classes["tags-container"]}>
+              {project.projectTags.map((tag, index) => (
+                <li key={index}>
+                  <p>{tag.toUpperCase()}</p>
+                </li>
+              ))}
+            </ul>
           </li>
         ))}
       </ul>
