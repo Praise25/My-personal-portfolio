@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 88px;
+  height: 5.5rem;
   font-family: var(--space-grotesk);
   font-size: 5.5rem;
   letter-spacing: -2.5px;
@@ -131,4 +131,30 @@
   color: var(--red);
   text-align: right;
   margin-top: 0.3rem;
+}
+
+@media (max-width: 1024px) {
+  .root-container {
+    padding: 2.5rem 6.25rem 3.1rem;
+  }
+
+  .main-content article {
+    width: 50%;
+  }
+
+  .main-content article h1 {
+    font-size: 4rem;
+  }
+
+  .main-content article p {
+    font-size: 1rem;
+  }
+
+  .oval-design {
+    width: 30%;
+  }
+
+  .button {
+    width: 45%;
+  }
 }
