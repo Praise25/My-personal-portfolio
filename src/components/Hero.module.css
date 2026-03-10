@@ -99,3 +99,19 @@
     width: 30%;
   }
 }
+
+@media (max-width: 768px) {
+  .image-container {
+    top: -7.1em;
+    right: -12.2em;
+  }
+
+  .white-circle {
+    left: 14.5em;
+    bottom: 0.25em;
+  }
+
+  .hero-section h1 {
+    
+  }
+}

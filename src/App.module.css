@@ -26,3 +26,17 @@
     padding: 2.25rem 6.25rem;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 2rem;
+  }
+
+  .navbar {
+    padding: 2.25rem 2rem;
+  }
+
+  .navbar ul {
+    margin-right: 0;
+  }
+}

@@ -52,9 +52,15 @@
   }
 
   .root-container img {
-  position: absolute;
-  right: -6.2em;
-  bottom: 0.9em;
-  width: 30%;
+    position: absolute;
+    right: -6.2em;
+    bottom: 0.9em;
+    width: 30%;
+  }
 }
+
+@media (max-width: 768px) {
+  .root-container {
+    margin-top: 5rem;
+  }
 }
