@@ -18,3 +18,9 @@
   gap: 2rem;
   list-style: none;
 }
+
+@media (max-width: 480px) {   
+  .nav-content {
+    flex-direction: column;
+  }
+}

@@ -8,33 +8,38 @@ import { useMediaQuery } from "react-responsive";
 import classes from "./Hero.module.css";
 
 export default function Hero() {
-  const isTabletOrMobile = useMediaQuery({ minWidth: 481, maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 481, maxWidth: 768 });
+  const isMobile = useMediaQuery({ maxWidth: 480 });
+
+  function getHeroText(isTablet: boolean, isMobile: boolean) {
+    if (isTablet) {
+      return (
+        <h1>
+          Nice to {"\n"}
+          meet you! {"\n"}I'm <span> Adam Keyes</span>.
+        </h1>
+      );
+    } else if (isMobile) {
+      return (
+        <h1>
+          Nice to meet you! {"\n"}
+          I'm <span>Adam Keyes</span>.
+        </h1>
+      );
+    } else {
+      return (
+        <h1>
+          Nice to meet you! {"\n"}
+          I'm
+          <span>Adam Keyes</span>.
+        </h1>
+      );
+    }
+  }
 
   return (
     <>
       <div className={classes["hero-section"]}>
-        <div>
-          {isTabletOrMobile ? (
-            <h1>
-              Nice to {"\n"}
-              meet you! {"\n"}I'm <span> Adam Keyes</span>.
-            </h1>
-          ) : (
-            <h1>
-              Nice to meet you! {"\n"}
-              I'm
-              <span>Adam Keyes</span>.
-            </h1>
-          )}
-
-          <p>
-            Based in the UK, I’m a front-end developer {"\n"}
-            passionate about building accessible web apps {"\n"}
-            that users love.
-          </p>
-          <Button className={classes.button}>CONTACT ME</Button>
-        </div>
-
         <div className={classes["image-container"]}>
           <img
             className={classes["display-picture"]}
@@ -46,6 +51,16 @@ export default function Hero() {
             src={whiteCircle}
             alt="White Circle"
           />
+        </div>
+        <div className={classes["content-container"]}>
+          {getHeroText(isTablet, isMobile)}
+
+          <p>
+            Based in the UK, I’m a front-end developer {"\n"}
+            passionate about building accessible web apps {"\n"}
+            that users love.
+          </p>
+          <Button className={classes.button}>CONTACT ME</Button>
         </div>
       </div>
       <img

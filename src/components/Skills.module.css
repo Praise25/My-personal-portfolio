@@ -68,3 +68,31 @@
     width: 50%;
   }
 }
+
+@media (max-width: 480px) {
+  .root-container {
+    border-bottom: 1.6px solid #ffffff;
+  }
+  
+  .list-container {
+    justify-content: center;
+
+  }
+
+  .list-container li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .list-container li p {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+
+  .root-container img {
+    position: absolute;
+    right: -13em;
+    bottom: -5em;
+    width: 100%;
+  }
+}

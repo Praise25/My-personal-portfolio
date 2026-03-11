@@ -117,3 +117,45 @@
     margin-left: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .image-container {
+    position: static;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+    line-height: calc(48rem / 16);
+    margin-top: 2rem;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ovals-design {
+    width: 100%;
+    z-index: -100;
+    top: 9.5em;
+    left: -16em;
+  }
+
+  .button {
+    margin-top: 1rem;
+  }
+
+  .white-circle {
+    top: 13em;
+    left: 24em;
+  }
+}

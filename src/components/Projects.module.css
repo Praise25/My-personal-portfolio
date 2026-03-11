@@ -107,3 +107,9 @@
     font-size: 1.2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .root-container h1 {
+    font-size: 2.5rem
+  }
+}
