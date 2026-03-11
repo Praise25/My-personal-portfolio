@@ -1,3 +1,8 @@
+.app-container {
+  position: relative;
+  overflow: hidden;
+}
+
 .container {
   min-height: 100vh;
   margin: 0 10.25rem;
@@ -16,6 +21,8 @@
 .navbar ul li a {
   display: flex;
 }
+
+/* TODO: add media query for max-width: 1366px */
 
 @media (max-width: 1024px) {
   .container {
@@ -40,3 +47,5 @@
     margin-right: 0;
   }
 }
+
+/* TODO: complete media query for screens greater than 1920px */

@@ -8,7 +8,7 @@ import classes from "./App.module.css";
 
 export default function App() {
   return (
-    <>
+    <div className={classes["app-container"]}>
       <Navbar brandName="adamkeyes" className={classes.navbar} />
       <main className={classes.container}>
         <Hero />
@@ -16,6 +16,6 @@ export default function App() {
         <Projects/>
       </main>
       <ContactMe />
-    </>
+    </div>
   );
 }
