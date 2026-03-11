@@ -42,7 +42,7 @@
 
 .image-container {
   position: absolute;
-  z-index: -1;
+  z-index: -50;
   top: -12.3em;
   right: 0;
 }
@@ -56,7 +56,7 @@
 .ovals-design {
   position: absolute;
   top: 8.295em;
-  left: -0.5px;
+  left: 0;
 }
 
 .button {
@@ -85,14 +85,16 @@
   }
 
   .image-container {
+    display: flex;
     position: absolute;
-    z-index: -1;
+    z-index: -50;
     top: -7.2em;
-    right: -5.5em;
+    right: -6.5em;
+    width: 50%;
   }
 
   .display-picture {
-    width: 80%;
+    width: 100%;
   }
 
   .ovals-design {
@@ -103,15 +105,15 @@
 @media (max-width: 768px) {
   .image-container {
     top: -7.1em;
-    right: -12.2em;
+    right: -2em;
   }
 
   .white-circle {
-    left: 14.5em;
+    left: 18.5em;
     bottom: 0.25em;
   }
 
-  .hero-section h1 {
-    
+  .hero-section span {
+    margin-left: 0;
   }
 }

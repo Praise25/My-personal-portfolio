@@ -49,3 +49,9 @@
 }
 
 /* TODO: complete media query for screens greater than 1920px */
+/* @media (min-width: 1920px) {
+  .app-container {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+} */

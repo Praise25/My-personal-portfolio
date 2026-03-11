@@ -3,18 +3,29 @@ import whiteCircle from "../assets/white-circle.svg";
 import ovalsDesign from "../assets/ovals.svg";
 import Button from "./UI/Button";
 
+import { useMediaQuery } from "react-responsive";
+
 import classes from "./Hero.module.css";
 
 export default function Hero() {
+  const isTabletOrMobile = useMediaQuery({ minWidth: 481, maxWidth: 768 });
+
   return (
     <>
       <div className={classes["hero-section"]}>
         <div>
-          <h1>
-            Nice to meet you! {"\n"}
-            I'm
-            <span>Adam Keyes</span>.
-          </h1>
+          {isTabletOrMobile ? (
+            <h1>
+              Nice to {"\n"}
+              meet you! {"\n"}I'm <span> Adam Keyes</span>.
+            </h1>
+          ) : (
+            <h1>
+              Nice to meet you! {"\n"}
+              I'm
+              <span>Adam Keyes</span>.
+            </h1>
+          )}
 
           <p>
             Based in the UK, I’m a front-end developer {"\n"}

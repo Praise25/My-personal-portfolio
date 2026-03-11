@@ -22,9 +22,6 @@
 }
 
 .main-content article h1 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   height: 5.5rem;
   font-family: var(--space-grotesk);
   font-size: 5.5rem;
@@ -111,13 +108,12 @@
 
 .button {
   font-family: var(--space-grotesk);
-  font-size: 16;
+  font-size: 16px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 2.29px;
   align-self: flex-end;
   background-color: var(--dark-grey);
-  width: 33%;
   margin-top: 0.2rem;
 }
 
@@ -153,8 +149,30 @@
   .oval-design {
     width: 30%;
   }
+}
 
-  .button {
-    width: 45%;
+@media (max-width: 768px) {
+  .root-container {
+    padding: 2.5rem 2rem 3.1rem;
+  }
+
+  .main-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-content article {
+    width: 70%;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .main-content form {
+    width: 70%;
+  }
+
+  .main-content article p {
+    margin-top: 0;
   }
 }
