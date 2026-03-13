@@ -1,53 +1,9 @@
+import classes from "./Projects.module.css";
 import Button from "./UI/Button";
-import designPortfolio from "../assets/designer-portfolio.jpg";
-import landingPage from "../assets/landing-page.png";
-import todoApp from "../assets/todo-app.png";
-import entertainmentApp from "../assets/entertainment-app.png";
-import memoryGame from "../assets/memory-game.png";
-import artShowcase from "../assets/art-showcase.png";
 
 import { motion } from "motion/react";
+import { PROJECTS } from "../data/projects";
 
-import classes from "./Projects.module.css";
-
-const PROJECTS = [
-  {
-    projectLink: "#",
-    projectImg: designPortfolio,
-    projectTitle: "Design Portfolio",
-    projectTags: ["HTML", "CSS"],
-  },
-  {
-    projectLink: "#",
-    projectImg: landingPage,
-    projectTitle: "E-Learning Landing Page",
-    projectTags: ["HTML", "CSS"],
-  },
-  {
-    projectLink: "#",
-    projectImg: todoApp,
-    projectTitle: "Todo Web App",
-    projectTags: ["HTML", "CSS", "Javascript"],
-  },
-  {
-    projectLink: "#",
-    projectImg: entertainmentApp,
-    projectTitle: "Entertainment Web App",
-    projectTags: ["HTML", "CSS", "Javascript"],
-  },
-  {
-    projectLink: "#",
-    projectImg: memoryGame,
-    projectTitle: "Memory Game",
-    projectTags: ["HTML", "CSS", "Javascript"],
-  },
-  {
-    projectLink: "#",
-    projectImg: artShowcase,
-    projectTitle: "Art Gallery Showcase",
-    projectTags: ["HTML", "CSS", "Javascript"],
-  },
-];
 
 const container = {
   visible: {},
@@ -76,7 +32,7 @@ export default function Projects() {
           <li key={index}>
             <motion.a
               className={classes["image-container"]}
-              href={project.projectLink}
+              href={project.liveUrl}
               variants={container}
               initial="hidden"
               whileHover="visible"
@@ -89,13 +45,13 @@ export default function Projects() {
               </motion.div>
               <motion.img
                 variants={image}
-                src={project.projectImg}
-                alt={project.projectTitle}
+                src={project.imageUrl}
+                alt={project.title}
               />
             </motion.a>
-            <h2>{project.projectTitle.toUpperCase()}</h2>
+            <h2>{project.title.toUpperCase()}</h2>
             <ul className={classes["tags-container"]}>
-              {project.projectTags.map((tag, index) => (
+              {project.tags.map((tag, index) => (
                 <li key={index}>
                   <p>{tag.toUpperCase()}</p>
                 </li>

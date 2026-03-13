@@ -1,15 +1,7 @@
+import classes from "./Skills.module.css";
 import ovalsDesign6 from "../assets/ovals-6.svg"
 
-import classes from "./Skills.module.css";
-
-const SKILLS = [
-  { id: 0, name: "HTML", years: 4 },
-  { id: 1, name: "CSS", years: 4 },
-  { id: 2, name: "Javascript", years: 4 },
-  { id: 3, name: "Accessibility", years: 4 },
-  { id: 4, name: "React", years: 3 },
-  { id: 5, name: "Sass", years: 3 },
-];
+import { SKILLS } from "../data/skills";
 
 export default function Skills() {
   return (
