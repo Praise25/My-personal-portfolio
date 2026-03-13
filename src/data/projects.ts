@@ -5,7 +5,7 @@ import entertainmentApp from "../assets/entertainment-app.png";
 import memoryGame from "../assets/memory-game.png";
 import artShowcase from "../assets/art-showcase.png";
 
-interface Project {
+export interface Project {
   title: string;
   tags: string[];
   imageUrl: string;
