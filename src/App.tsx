@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className={classes["app-container"]}>
       <Navbar brandName="adamkeyes" className={classes.navbar} />
-      <main className={classes.container}>
+      <main className={classes["main-container"]}>
         <Hero />
         <Skills/>
         <Projects/>

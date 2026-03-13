@@ -67,6 +67,7 @@ export default function Project({ project, index }: ProjectProps) {
         />
       </motion.div>
 
+      {/* TODO: Center title,tags and buttons */}
       <h2>{project.title.toUpperCase()}</h2>
       <ul className={classes["tags-container"]}>
         {project.tags.map((tag, index) => (

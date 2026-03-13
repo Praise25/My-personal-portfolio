@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 
-.container {
+.main-container {
   min-height: 100vh;
   margin: 0 10.25rem;
 }
@@ -25,7 +25,7 @@
 /* TODO: add media query for max-width: 1366px */
 
 @media (max-width: 1024px) {
-  .container {
+  .main-container {
     margin: 0 6.25rem;
   }
 
@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .main-container {
     margin: 0 2rem;
   }
 
