@@ -72,7 +72,7 @@ export default function Hero() {
             passionate about building accessible web apps {"\n"}
             that users love.
           </p>
-          <Button className={classes.button}>CONTACT ME</Button>
+          <Button className={classes.button} type="button">CONTACT ME</Button>
         </div>
       </div>
       <img

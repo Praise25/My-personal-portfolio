@@ -11,7 +11,7 @@
   --space-grotesk:
     "Space Grotesk", system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  color: #ffffff;
+  color: var(--white);
   background-color: var(--black);
 
   font-synthesis: none;

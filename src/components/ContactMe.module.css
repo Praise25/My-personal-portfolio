@@ -35,7 +35,7 @@
   font-weight: 500;
   line-height: 1.55;
   white-space: pre-line;
-  color: #d9d9d9;
+  color: var(--light-grey);
   margin-top: 2rem;
   padding-bottom: 0.1rem;
 }
@@ -151,7 +151,7 @@
   }
 }
 
-@media (max-width: 48) {
+@media (max-width: 48rem) {
   .root-container {
     padding: 2.5rem 2rem 3.1rem;
   }
@@ -177,7 +177,7 @@
   }
 }
 
-@media (max-width: 30) {
+@media (max-width: 30rem) {
   .main-content article {
     width: 100%;
   }

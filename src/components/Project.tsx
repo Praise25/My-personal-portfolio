@@ -50,10 +50,10 @@ export default function Project({ project }: ProjectProps) {
         {!isTabletOrMobile && <motion.div className={classes.overlay} variants={overlay}>
           {showOverlay && (
             <>
-              <Button className={classes["overlay-button"]}>
+              <Button className={classes["overlay-button"]} type='button'>
                 VIEW PROJECT
               </Button>
-              <Button className={classes["overlay-button"]}>VIEW CODE</Button>
+              <Button className={classes["overlay-button"]} type="button">VIEW CODE</Button>
             </>
           )}
         </motion.div>}
@@ -78,8 +78,8 @@ export default function Project({ project }: ProjectProps) {
 
       {isTabletOrMobile && (
         <div className={classes["button-container"]}>
-          <Button className={classes["overlay-button"]}>VIEW PROJECT</Button>
-          <Button className={classes["overlay-button"]}>VIEW CODE</Button>
+          <Button className={classes["overlay-button"]} type="button">VIEW PROJECT</Button>
+          <Button className={classes["overlay-button"]} type="button">VIEW CODE</Button>
         </div>
       )}
     </li>
