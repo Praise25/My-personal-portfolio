@@ -121,6 +121,7 @@
 @media (max-width: 480px) {
   .image-container {
     position: static;
+    margin-top: -7rem;
   }
 
   .hero-section {

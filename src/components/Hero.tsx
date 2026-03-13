@@ -1,4 +1,5 @@
 import heroImg from "../assets/hero-picture.png";
+import gradientHeroImg from "../assets/gradient-hero-picture.png";
 import whiteCircle from "../assets/white-circle.svg";
 import ovalsDesign from "../assets/ovals.svg";
 import Button from "./UI/Button";
@@ -41,11 +42,22 @@ export default function Hero() {
     <>
       <div className={classes["hero-section"]}>
         <div className={classes["image-container"]}>
-          <img
-            className={classes["display-picture"]}
-            src={heroImg}
-            alt="Adam Keyes"
-          />
+          {!isMobile && (
+            <img
+              className={classes["display-picture"]}
+              src={heroImg}
+              alt="Adam Keyes"
+            />
+          )}
+
+          {isMobile && (
+            <img
+              className={classes["display-picture"]}
+              src={gradientHeroImg}
+              alt="Adam Keyes"
+            />
+          )}
+
           <img
             className={classes["white-circle"]}
             src={whiteCircle}
