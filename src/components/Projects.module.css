@@ -4,11 +4,11 @@
   margin-top: 4.35rem;
 }
 
-.root-container h1 {
+.root-container h2 {
   font-family: var(--space-grotesk);
   font-size: 5.5rem;
   letter-spacing: -2.5px;
-  line-height: calc(88rem / 16);
+  line-height: 1;
   padding-left: 0.5px;
 }
 
@@ -41,27 +41,27 @@
   display: flex;
 }
 
-.list-container li h2 {
+.list-container li h3 {
   font-family: var(--space-grotesk);
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 1.33;
   color: white;
   margin-top: 1rem;
 }
 
-@media (max-width: 1024px) {
-  .root-container h1 {
+@media (max-width: 64rem) {
+  .root-container h2 {
     font-size: 4.5rem;
   }
 
-  .list-container li h2 {
+  .list-container li h3 {
     font-size: 1.2rem;
   }
 }
 
-@media (max-width: 480px) {
-  .root-container h1 {
+@media (max-width: 30rem) {
+  .root-container h2 {
     font-size: 2.5rem;
   }
 
@@ -73,7 +73,7 @@
     width: 100%;
   }
 
-  .list-container li h2 {
+  .list-container li h3 {
     font-size: 1.5rem;
   }
 }

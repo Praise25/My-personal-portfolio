@@ -8,12 +8,12 @@ export default function Projects() {
   return (
     <div className={classes["root-container"]}>
       <div className={classes["project-header"]}>
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         <Button className={classes.button}>CONTACT ME</Button>
       </div>
       <ul className={classes["list-container"]}>
         {PROJECTS.map((project, index) => (
-          <Project project={project} index={index} />
+          <Project project={project} key={index} />
         ))}
       </ul>
     </div>

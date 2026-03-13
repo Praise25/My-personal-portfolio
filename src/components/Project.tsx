@@ -8,7 +8,6 @@ import { type Project } from "../data/projects";
 
 interface ProjectProps {
   project: Project;
-  index: number;
 }
 
 const container = {
@@ -26,7 +25,7 @@ const overlay = {
   hidden: { opacity: 0, scale: 1 },
 };
 
-export default function Project({ project, index }: ProjectProps) {
+export default function Project({ project }: ProjectProps) {
   const [showOverlay, setShowOverlay] = useState(false);
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
@@ -39,7 +38,7 @@ export default function Project({ project, index }: ProjectProps) {
   }
 
   return (
-    <li key={index}>
+    <li>
       <motion.div
         className={classes["image-container"]}
         variants={container}
@@ -68,7 +67,7 @@ export default function Project({ project, index }: ProjectProps) {
       </motion.div>
 
       {/* TODO: Center title,tags and buttons */}
-      <h2>{project.title.toUpperCase()}</h2>
+      <h3>{project.title.toUpperCase()}</h3>
       <ul className={classes["tags-container"]}>
         {project.tags.map((tag, index) => (
           <li key={index}>

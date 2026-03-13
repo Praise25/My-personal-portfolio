@@ -12,7 +12,7 @@ interface NavbarProps extends React.HTMLAttributes<HTMLElement> {
 export default function Navbar({brandName, className, ...props }: NavbarProps) {
   return (
     <nav className={`${classes["nav-content"]} ${className}`} {...props}>
-      <h1>{brandName}</h1>
+      <h2>{brandName}</h2>
       <ul>
         <li>
           <a

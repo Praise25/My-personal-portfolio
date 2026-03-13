@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: #242424;
+  background-color: var(--dark-grey);
   width: 100%;
   margin-top: 8.6rem;
   padding: 2.5rem 10.25rem 3.1rem;
@@ -21,7 +21,7 @@
   padding-top: 1.2rem;
 }
 
-.main-content article h1 {
+.main-content article h2 {
   height: 5.5rem;
   font-family: var(--space-grotesk);
   font-size: 5.5rem;
@@ -33,7 +33,7 @@
   font-family: var(--space-grotesk);
   font-size: 1.125rem;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 1.55;
   white-space: pre-line;
   color: #d9d9d9;
   margin-top: 2rem;
@@ -59,6 +59,11 @@
   padding: 1rem 1.5rem;
 }
 
+.main-content form textarea {
+  resize: none;
+  height: 120px;
+}
+
 .main-content form input.error,
 .main-content form textarea.error {
   border-bottom: 1.5px solid var(--red);
@@ -74,11 +79,6 @@
 .main-content form textarea::placeholder {
   color: var(--white);
   opacity: 0.5;
-}
-
-.main-content form textarea {
-  resize: none;
-  height: 120px;
 }
 
 .oval-design {
@@ -108,9 +108,9 @@
 
 .button {
   font-family: var(--space-grotesk);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.625;
   letter-spacing: 2.29px;
   align-self: flex-end;
   background-color: var(--dark-grey);
@@ -119,9 +119,9 @@
 
 .error-msg {
   font-family: var(--space-grotesk);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1.3;
   height: 16px;
   letter-spacing: -0.17px;
   color: var(--red);
@@ -129,7 +129,7 @@
   margin-top: 0.3rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .root-container {
     padding: 2.5rem 6.25rem 3.1rem;
   }
@@ -138,7 +138,7 @@
     width: 50%;
   }
 
-  .main-content article h1 {
+  .main-content article h2 {
     font-size: 4rem;
   }
 
@@ -151,7 +151,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48) {
   .root-container {
     padding: 2.5rem 2rem 3.1rem;
   }
@@ -177,7 +177,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30) {
   .main-content article {
     width: 100%;
   }

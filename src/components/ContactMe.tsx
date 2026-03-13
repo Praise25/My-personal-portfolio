@@ -1,10 +1,10 @@
 import Navbar from "./UI/Navbar";
 import ovalsdesign5 from "../assets/ovals-5.svg";
 import Button from "./UI/Button";
-import z from "zod";
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 
 import classes from "./ContactMe.module.css";
 
@@ -31,14 +31,14 @@ export default function ContactMe() {
     <footer className={classes["root-container"]}>
       <div className={classes["main-content"]}>
         <article>
-          <h1>Contact</h1>
+          <h2>Contact</h2>
           <p>
             I would love to hear about your project and how I {"\n"} could help.
             Please fill in the form, and I’ll get back {"\n"}
             to you as soon as possible.
           </p>
         </article>
-        
+
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             {...register("name")}
@@ -76,7 +76,11 @@ export default function ContactMe() {
         alt="Oval Design 5"
       />
       <div className={classes["navbar-container"]}>
-        <Navbar className={classes.navbar} brandName="adamkeyes" />
+        <Navbar
+          className={classes.navbar}
+          brandName="adamkeyes"
+          aria-label="Footer Navigation"
+        />
       </div>
     </footer>
   );

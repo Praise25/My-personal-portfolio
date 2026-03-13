@@ -9,7 +9,7 @@
   font-family: var(--space-grotesk);
   font-size: 5.5rem;
   letter-spacing: -2.5px;
-  line-height: calc(88rem / 16);
+  line-height: 1;
   white-space: pre-line;
 }
 
@@ -34,7 +34,7 @@
   font-family: var(--space-grotesk);
   font-size: 1.125rem;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 1.55;
   white-space: pre-line;
   color: var(--light-grey);
   margin-top: 2.45rem;
@@ -64,7 +64,7 @@
   padding-right: 0.1rem;
 }
 
-@media (max-width: 1367px) {
+@media (max-width: 85rem) {
   .image-container {
     right: -11em;
   }
@@ -74,7 +74,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .hero-section {
     margin-top: 0;
   }
@@ -112,7 +112,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .image-container {
     top: -7.1em;
     right: -2em;
@@ -128,7 +128,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .image-container {
     position: static;
     margin-top: -7rem;
@@ -142,7 +142,7 @@
 
   .hero-section h1 {
     font-size: 3rem;
-    line-height: calc(48rem / 16);
+    line-height: 1;
     margin-top: 2rem;
   }
 

@@ -9,7 +9,7 @@ export default function Skills() {
       <ul className={classes["list-container"]}>
         {SKILLS.map((skill) => (
           <li key={skill.id}>
-            <h1>{skill.name}</h1>
+            <h2>{skill.name}</h2>
             <p>{skill.years} Years Experience</p>
           </li>
         ))}

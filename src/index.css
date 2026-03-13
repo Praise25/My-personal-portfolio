@@ -12,7 +12,7 @@
     "Space Grotesk", system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   color: #ffffff;
-  background-color: #151515;
+  background-color: var(--black);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
