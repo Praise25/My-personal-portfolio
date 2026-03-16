@@ -17,14 +17,14 @@ export default function Hero() {
       return (
         <h1>
           Nice to {"\n"}
-          meet you! {"\n"}I'm <span> Adam Keyes</span>.
+          meet you! {"\n"}I'm <span> Anene Praise</span>.
         </h1>
       );
     } else if (isMobile) {
       return (
         <h1>
           Nice to meet you! {"\n"}
-          I'm <span>Adam Keyes</span>.
+          I'm <span>Anene Praise</span>.
         </h1>
       );
     } else {
@@ -32,7 +32,7 @@ export default function Hero() {
         <h1>
           Nice to meet you! {"\n"}
           I'm
-          <span>Adam Keyes</span>.
+          <span>Anene Praise</span>.
         </h1>
       );
     }
@@ -46,7 +46,7 @@ export default function Hero() {
             <img
               className={classes["display-picture"]}
               src={heroImg}
-              alt="Adam Keyes"
+              alt="Anene Praise"
             />
           )}
 
@@ -54,7 +54,7 @@ export default function Hero() {
             <img
               className={classes["display-picture"]}
               src={gradientHeroImg}
-              alt="Adam Keyes"
+              alt="Anene Praise"
             />
           )}
 
@@ -68,11 +68,12 @@ export default function Hero() {
           {getHeroText(isTablet, isMobile)}
 
           <p>
-            Based in the UK, I’m a front-end developer {"\n"}
-            passionate about building accessible web apps {"\n"}
-            that users love.
+            I'm a full-stack developer who loves crafting seamless experiences.
+            From pixel-perfect interfaces to robust backend systems.
           </p>
-          <Button className={classes.button} type="button">CONTACT ME</Button>
+          <Button className={classes.button} type="button">
+            CONTACT ME
+          </Button>
         </div>
       </div>
       <img

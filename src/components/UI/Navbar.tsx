@@ -16,7 +16,7 @@ export default function Navbar({brandName, className, ...props }: NavbarProps) {
       <ul>
         <li>
           <a
-            href="https://www.github.com"
+            href="https://github.com/Praise25/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,7 +25,7 @@ export default function Navbar({brandName, className, ...props }: NavbarProps) {
         </li>
         <li>
           <a
-            href="https://www.frontendmentor.io/"
+            href="https://www.frontendmentor.io/profile/Praise25"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -34,7 +34,7 @@ export default function Navbar({brandName, className, ...props }: NavbarProps) {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/praise-anene-07776416a/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -43,7 +43,7 @@ export default function Navbar({brandName, className, ...props }: NavbarProps) {
         </li>
         <li>
           <a
-            href="https://www.twitter.com"
+            href="https://x.com/PraiseTheDev"
             target="_blank"
             rel="noopener noreferrer"
           >

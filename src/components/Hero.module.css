@@ -47,6 +47,10 @@
   right: 0;
 }
 
+.content-container p {
+  width: 50%;
+}
+
 .white-circle {
   position: absolute;
   left: -4rem;
