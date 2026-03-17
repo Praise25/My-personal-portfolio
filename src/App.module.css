@@ -24,6 +24,7 @@
 
 /* TODO: add media query for max-width: 1366px */
 
+/* 1024px */
 @media (max-width: 64rem) {
   .main-container {
     margin: 0 6.25rem;
@@ -34,6 +35,7 @@
   }
 }
 
+/* 768px */
 @media (max-width: 48rem) {
   .main-container {
     margin: 0 2rem;
@@ -48,12 +50,14 @@
   }
 }
 
+/* 480px */
 @media (max-width: 30rem) {
   .navbar {
     padding: 2.25rem 2rem 0;
   }
 }
 
+/* 1920px */
 @media (min-width: 120rem) {
   .app-container {
     max-width: 120rem;

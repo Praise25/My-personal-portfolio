@@ -19,6 +19,7 @@
   list-style: none;
 }
 
+/* 480px */
 @media (max-width: 30rem) {   
   .nav-content {
     flex-direction: column;

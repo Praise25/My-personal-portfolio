@@ -50,6 +50,7 @@
   margin-top: 1rem;
 }
 
+/* 1024px */
 @media (max-width: 64rem) {
   .root-container h2 {
     font-size: 4.5rem;
@@ -60,6 +61,7 @@
   }
 }
 
+/* 480px */
 @media (max-width: 30rem) {
   .root-container h2 {
     font-size: 2.5rem;

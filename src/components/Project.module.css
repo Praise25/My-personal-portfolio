@@ -52,6 +52,7 @@
   background-color: transparent;
 }
 
+/* 480px */
 @media (max-width: 30rem) {
   .tags-container {
     width: fit-content;

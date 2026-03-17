@@ -129,6 +129,7 @@
   margin-top: 0.3rem;
 }
 
+/* 1024px */
 @media (max-width: 64rem) {
   .root-container {
     padding: 2.5rem 6.25rem 3.1rem;
@@ -151,6 +152,7 @@
   }
 }
 
+/* 768px */
 @media (max-width: 48rem) {
   .root-container {
     padding: 2.5rem 2rem 3.1rem;
@@ -177,6 +179,7 @@
   }
 }
 
+/* 480px */
 @media (max-width: 30rem) {
   .main-content article {
     width: 100%;
