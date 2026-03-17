@@ -6,10 +6,14 @@ import linkedinIcon from "../../assets/linkedIn.svg";
 import twitterIcon from "../../assets/twitter.svg";
 
 interface NavbarProps extends React.HTMLAttributes<HTMLElement> {
-  brandName: string
+  brandName: string;
 }
 
-export default function Navbar({brandName, className, ...props }: NavbarProps) {
+export default function Navbar({
+  brandName,
+  className,
+  ...props
+}: NavbarProps) {
   return (
     <nav className={`${classes["nav-content"]} ${className}`} {...props}>
       <h2>{brandName}</h2>
@@ -21,15 +25,6 @@ export default function Navbar({brandName, className, ...props }: NavbarProps) {
             rel="noopener noreferrer"
           >
             <img src={githubIcon} alt="github icon" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.frontendmentor.io/profile/Praise25"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={frontendMentorIcon} alt="frontend mentor icon" />
           </a>
         </li>
         <li>
@@ -48,6 +43,15 @@ export default function Navbar({brandName, className, ...props }: NavbarProps) {
             rel="noopener noreferrer"
           >
             <img src={twitterIcon} alt="twitter icon" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.frontendmentor.io/profile/Praise25"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={frontendMentorIcon} alt="frontend mentor icon" />
           </a>
         </li>
       </ul>
