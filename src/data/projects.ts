@@ -1,9 +1,6 @@
-import designPortfolio from "../assets/designer-portfolio.jpg";
-import landingPage from "../assets/landing-page.png";
-import todoApp from "../assets/todo-app.png";
-import entertainmentApp from "../assets/entertainment-app.png";
-import memoryGame from "../assets/memory-game.png";
-import artShowcase from "../assets/art-showcase.png";
+import devPortfolio from "../assets/dev-portfolio.png";
+import quizApp from "../assets/quiz-app.png";
+import ticTacToe from "../assets/tic-tac-toe.png";
 
 export interface Project {
   title: string;
@@ -15,39 +12,24 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    title: "Design Portfolio",
-    tags: ["HTML", "CSS"],
-    imageUrl: designPortfolio,
-    liveUrl: "#",
+    title: "Developer Portfolio",
+    tags: ["React", "Typescript"],
+    imageUrl: devPortfolio,
+    githubUrl: "https://github.com/Praise25/Developer-portfolio",
+    liveUrl: "https://developer-portfolio-version-one.vercel.app/",
   },
   {
-    title: "E-Learning Landing Page",
-    tags: ["HTML", "CSS"],
-    imageUrl: landingPage,
-    liveUrl: "#",
+    title: "Quiz Application",
+    tags: ["HTML", "CSS", "Javascript", "Express"],
+    imageUrl: quizApp,
+    githubUrl: "https://github.com/Praise25/Quiz-App",
+    liveUrl: "https://quiz-app-3z8h.onrender.com/",
   },
   {
-    title: "Todo Web App",
+    title: "Tic-Tac-Toe Game",
     tags: ["HTML", "CSS", "Javascript"],
-    imageUrl: todoApp,
-    liveUrl: "#",
-  },
-  {
-    title: "Entertainment Web App",
-    tags: ["HTML", "CSS", "Javascript"],
-    imageUrl: entertainmentApp,
-    liveUrl: "#",
-  },
-  {
-    title: "Memory Game",
-    tags: ["HTML", "CSS", "Javascript"],
-    imageUrl: memoryGame,
-    liveUrl: "#",
-  },
-  {
-    title: "Art Gallery Showcase",
-    tags: ["HTML", "CSS", "Javascript"],
-    imageUrl: artShowcase,
-    liveUrl: "#",
+    imageUrl: ticTacToe,
+    githubUrl: "https://github.com/Praise25/Tic-Tac-Toe-Game",
+    liveUrl: "https://praise25.github.io/Tic-Tac-Toe-Game/",
   },
 ];
