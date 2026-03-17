@@ -2,7 +2,7 @@ import classes from "./Project.module.css";
 import Button from "./UI/Button";
 
 import { motion } from "motion/react";
-import { useMediaQuery } from "react-responsive";  
+import { useMediaQuery } from "react-responsive";
 import { useState } from "react";
 import { type Project } from "../data/projects";
 
@@ -47,17 +47,28 @@ export default function Project({ project }: ProjectProps) {
         onHoverStart={handleHoverStart}
         onHoverEnd={handleHoverEnd}
       >
-        {!isTabletOrMobile && <motion.div className={classes.overlay} variants={overlay}>
-          {showOverlay && (
-            <>
-              <Button className={classes["overlay-button"]} type='button'>
-                VIEW PROJECT
-              </Button>
-              <Button className={classes["overlay-button"]} type="button">VIEW CODE</Button>
-            </>
-          )}
-        </motion.div>}
-        
+        {!isTabletOrMobile && (
+          <motion.div className={classes.overlay} variants={overlay}>
+            {showOverlay && (
+              <>
+                <Button
+                  className={classes["overlay-button"]}
+                  type="button"
+                  url={project.liveUrl}
+                >
+                  VIEW PROJECT
+                </Button>
+                <Button
+                  className={classes["overlay-button"]}
+                  type="button"
+                  url={project.githubUrl}
+                >
+                  VIEW CODE
+                </Button>
+              </>
+            )}
+          </motion.div>
+        )}
 
         <motion.img
           variants={image}
@@ -78,8 +89,20 @@ export default function Project({ project }: ProjectProps) {
 
       {isTabletOrMobile && (
         <div className={classes["button-container"]}>
-          <Button className={classes["overlay-button"]} type="button">VIEW PROJECT</Button>
-          <Button className={classes["overlay-button"]} type="button">VIEW CODE</Button>
+          <Button
+            className={classes["overlay-button"]}
+            type="button"
+            url={project.liveUrl}
+          >
+            VIEW PROJECT
+          </Button>
+          <Button
+            className={classes["overlay-button"]}
+            type="button"
+            url={project.githubUrl}
+          >
+            VIEW CODE
+          </Button>
         </div>
       )}
     </li>
