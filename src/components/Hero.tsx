@@ -6,6 +6,7 @@ import Button from "./UI/Button";
 import sjw from "../assets/shadow-monarch.jpg";
 
 import { useMediaQuery } from "react-responsive";
+import { TypeAnimation } from "react-type-animation";
 
 import classes from "./Hero.module.css";
 
@@ -22,14 +23,42 @@ export default function Hero({ onClick }: HeroProps) {
       return (
         <h1>
           Nice to {"\n"}
-          meet you! {"\n"}I'm <span> Anene Praise</span>.
+          meet you! {"\n"}I'm{" "}
+          <TypeAnimation
+            sequence={[
+              "Anene Praise",
+              1500,
+              "a Frontend Dev",
+              1500,
+              "a Backend Dev",
+              1500,
+              "a Gamer",
+              1500,
+            ]}
+            repeat={Infinity}
+            cursor={false}
+          />
         </h1>
       );
     } else if (isMobile) {
       return (
         <h1>
           Nice to meet you! {"\n"}
-          I'm <span>Anene Praise</span>.
+          I'm{" "}
+          <TypeAnimation
+            sequence={[
+              "Anene Praise",
+              1500,
+              "a Frontend Dev",
+              1500,
+              "a Backend Dev",
+              1500,
+              "a Gamer",
+              1500,
+            ]}
+            repeat={Infinity}
+            cursor={false}
+          />
         </h1>
       );
     } else {
@@ -37,7 +66,20 @@ export default function Hero({ onClick }: HeroProps) {
         <h1>
           Nice to meet you! {"\n"}
           I'm
-          <span>Anene Praise</span>.
+          <TypeAnimation
+            sequence={[
+              "Anene Praise",
+              1500,
+              "a Frontend Dev",
+              1500,
+              "a Backend Dev",
+              1500,
+              "a Gamer",
+              1500,
+            ]}
+            repeat={Infinity}
+            cursor={false}
+          />
         </h1>
       );
     }
