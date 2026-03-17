@@ -33,9 +33,8 @@ export default function ContactMe() {
         <article>
           <h2>Contact</h2>
           <p>
-            I would love to hear about your project and how I {"\n"} can help.
-            Please fill in the form, and I’ll get back {"\n"}
-            to you as soon as possible.
+            I would love to hear about your project and how I can help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
           </p>
         </article>
 

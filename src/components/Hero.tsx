@@ -1,8 +1,9 @@
-import heroImg from "../assets/hero-picture.png";
-import gradientHeroImg from "../assets/gradient-hero-picture.png";
-import whiteCircle from "../assets/white-circle.svg";
+// import heroImg from "../assets/hero-picture.png";
+// import gradientHeroImg from "../assets/gradient-hero-picture.png";
+// import whiteCircle from "../assets/white-circle.svg";
 import ovalsDesign from "../assets/ovals.svg";
 import Button from "./UI/Button";
+import sjw from "../assets/shadow-monarch.jpg"
 
 import { useMediaQuery } from "react-responsive";
 
@@ -45,7 +46,7 @@ export default function Hero() {
           {!isMobile && (
             <img
               className={classes["display-picture"]}
-              src={heroImg}
+              src={sjw}
               alt="Anene Praise"
             />
           )}
@@ -53,23 +54,23 @@ export default function Hero() {
           {isMobile && (
             <img
               className={classes["display-picture"]}
-              src={gradientHeroImg}
+              src={sjw}
               alt="Anene Praise"
             />
           )}
 
-          <img
+          {/* <img
             className={classes["white-circle"]}
             src={whiteCircle}
             alt="White Circle"
-          />
+          /> */}
         </div>
         <div className={classes["content-container"]}>
           {getHeroText(isTablet, isMobile)}
 
           <p>
-            I'm a full-stack developer who loves crafting seamless experiences.
-            From pixel-perfect interfaces to robust backend systems.
+            I'm a full-stack developer who loves crafting seamless experiences,
+            from pixel-perfect interfaces to robust backend systems.
           </p>
           <Button className={classes.button} type="button">
             CONTACT ME
