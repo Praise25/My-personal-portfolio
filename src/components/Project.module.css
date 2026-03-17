@@ -1,6 +1,7 @@
 .tags-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 0.4375rem;
 }
@@ -26,6 +27,7 @@
 
 .image-container {
   position: relative;
+  object-fit: cover;
 }
 
 .image-container img {
