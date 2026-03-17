@@ -1,6 +1,3 @@
-// import heroImg from "../assets/hero-picture.png";
-// import gradientHeroImg from "../assets/gradient-hero-picture.png";
-// import whiteCircle from "../assets/white-circle.svg";
 import ovalsDesign from "../assets/ovals.svg";
 import Button from "./UI/Button";
 import sjw from "../assets/shadow-monarch.jpg";
@@ -104,12 +101,6 @@ export default function Hero({ onClick }: HeroProps) {
               alt="Anene Praise"
             />
           )}
-
-          {/* <img
-            className={classes["white-circle"]}
-            src={whiteCircle}
-            alt="White Circle"
-          /> */}
         </div>
         <div className={classes["content-container"]}>
           {getHeroText(isTablet, isMobile)}

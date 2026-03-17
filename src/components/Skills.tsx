@@ -10,13 +10,16 @@ export default function Skills() {
       <ul className={classes["list-container"]}>
         {SKILLS.map((skill) => (
           <li key={skill.id}>
-            {/* <h2>{skill.name}</h2> */}
             <img src={skill.logo} alt={`${skill.name} logo`} />
             <p>{skill.name}</p>
           </li>
         ))}
       </ul>
-      <img className={classes["ovals-design"]} src={ovalsDesign6} alt="Oval Design 2" />
+      <img
+        className={classes["ovals-design"]}
+        src={ovalsDesign6}
+        alt="Oval Design 2"
+      />
     </div>
   );
 }
