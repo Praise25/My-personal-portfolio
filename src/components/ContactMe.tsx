@@ -16,7 +16,11 @@ const schema = z.object({
 
 type FormData = z.infer<typeof schema>;
 
-export default function ContactMe() {
+interface ContactMeProps {
+  innerRef: React.RefObject<HTMLInputElement | null>;
+}
+
+export default function ContactMe({ innerRef }: ContactMeProps) {
   const {
     register,
     handleSubmit,
@@ -41,6 +45,7 @@ export default function ContactMe() {
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             {...register("name")}
+            ref={innerRef}
             placeholder="NAME"
             className={errors?.name ? classes.error : ""}
           />

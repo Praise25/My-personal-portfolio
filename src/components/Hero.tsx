@@ -3,13 +3,17 @@
 // import whiteCircle from "../assets/white-circle.svg";
 import ovalsDesign from "../assets/ovals.svg";
 import Button from "./UI/Button";
-import sjw from "../assets/shadow-monarch.jpg"
+import sjw from "../assets/shadow-monarch.jpg";
 
 import { useMediaQuery } from "react-responsive";
 
 import classes from "./Hero.module.css";
 
-export default function Hero() {
+interface HeroProps {
+  onClick: () => void;
+}
+
+export default function Hero({ onClick }: HeroProps) {
   const isTablet = useMediaQuery({ minWidth: 481, maxWidth: 768 });
   const isMobile = useMediaQuery({ maxWidth: 480 });
 
@@ -72,7 +76,7 @@ export default function Hero() {
             I'm a full-stack developer who loves crafting seamless experiences,
             from pixel-perfect interfaces to robust backend systems.
           </p>
-          <Button className={classes.button} type="button">
+          <Button className={classes.button} type="button" onClick={onClick}>
             CONTACT ME
           </Button>
         </div>
