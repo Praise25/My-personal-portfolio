@@ -163,7 +163,7 @@
   .image-container img {
     position: static;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 10rem;
   }
 
   .content-container {
