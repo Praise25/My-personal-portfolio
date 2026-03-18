@@ -51,8 +51,8 @@
 .image-container img {
   position: relative;
   top: 0;
-  left: 45%;
-  width: 55%;
+  left: 51%;
+  width: 49%;
 }
 
 .content-container p {
@@ -113,13 +113,13 @@
     position: absolute;
     z-index: -50;
     top: -7.2em;
-    right: -6.5em;
+    right: -13.5em;
     width: 50%;
   }
 
   .image-container img {
-    left: 6%;
-    width: 93%;
+    left: 0;
+    width: 74%;
   }
 
   .display-picture {
@@ -139,7 +139,8 @@
   }
 
   .image-container img {
-    width: 94%;
+    left: 26%;
+    width: 80%;
   }
 
   .white-circle {
@@ -162,6 +163,7 @@
   .image-container img {
     position: static;
     width: 100%;
+    border-radius: 1rem;
   }
 
   .content-container {

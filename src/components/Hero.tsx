@@ -1,6 +1,6 @@
 import ovalsDesign from "../assets/ovals.svg";
 import Button from "./UI/Button";
-import sjw from "../assets/shadow-monarch.jpg";
+import fullBodyShot from "../assets/full-body.jpg"
 
 import { useMediaQuery } from "react-responsive";
 import { TypeAnimation } from "react-type-animation";
@@ -89,7 +89,7 @@ export default function Hero({ onClick }: HeroProps) {
           {!isMobile && (
             <img
               className={classes["display-picture"]}
-              src={sjw}
+              src={fullBodyShot}
               alt="Anene Praise"
             />
           )}
@@ -97,7 +97,7 @@ export default function Hero({ onClick }: HeroProps) {
           {isMobile && (
             <img
               className={classes["display-picture"]}
-              src={sjw}
+              src={fullBodyShot}
               alt="Anene Praise"
             />
           )}
