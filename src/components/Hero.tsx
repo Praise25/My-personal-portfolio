@@ -46,9 +46,9 @@ export default function Hero({ onClick }: HeroProps) {
             sequence={[
               "Anene Praise",
               1500,
-              "a Frontend Dev",
+              "a Frontend Developer",
               1500,
-              "a Backend Dev",
+              "a Backend Developer",
               1500,
               "a Gamer",
               1500,
