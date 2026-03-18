@@ -190,6 +190,10 @@
     margin-top: 2rem;
   }
 
+  .navbar {
+    padding: 2.6rem 0 2.4rem;
+  }
+
   .oval-design {
     width: 70%;
     left: -5em;

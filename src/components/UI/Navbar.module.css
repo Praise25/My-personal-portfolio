@@ -20,9 +20,8 @@
 }
 
 /* 480px */
-@media (max-width: 30rem) {   
-  .nav-content {
-    flex-direction: column;
+@media (max-width: 30rem) {
+  .nav-content ul {
     gap: 1.25rem;
   }
 }
