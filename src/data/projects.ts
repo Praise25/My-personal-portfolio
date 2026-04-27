@@ -1,5 +1,5 @@
 import devPortfolio from "../assets/dev-portfolio.png";
-import quizApp from "../assets/quiz-app.png";
+import quizApp from "../assets/quiz-app-preview.png";
 import ticTacToe from "../assets/tic-tac-toe.png";
 
 export interface Project {
@@ -20,10 +20,10 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Quiz Application",
-    tags: ["HTML", "CSS", "Javascript", "Express"],
+    tags: ["React", "Typescript", "NextJs"],
     imageUrl: quizApp,
-    githubUrl: "https://github.com/Praise25/Quiz-App",
-    liveUrl: "https://quiz-app-3z8h.onrender.com/",
+    githubUrl: "https://github.com/Praise25/Quiz-app-v2",
+    liveUrl: "https://quiz-app-alpha-lovat.vercel.app/",
   },
   {
     title: "Tic-Tac-Toe Game",
