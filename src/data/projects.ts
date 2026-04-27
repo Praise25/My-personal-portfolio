@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Quiz Application",
-    tags: ["React", "Typescript", "NextJs"],
+    tags: ["React", "Typescript", "NextJs", "TailwindCss"],
     imageUrl: quizApp,
     githubUrl: "https://github.com/Praise25/Quiz-app-v2",
     liveUrl: "https://quiz-app-alpha-lovat.vercel.app/",
